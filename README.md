@@ -1,8 +1,8 @@
 # docker-distcc
 distcc image
 base on:
-debian 10 (buster)
-distcc 3.3
+debian 12 (bookworm)
+distcc 3.4
 
 # Requirements
 

@@ -1,9 +1,10 @@
-distcc:
-    container_name: distcc-server
-    image: distcc:latest
-    environment: 
-        - NETWORK=192.168.0.1/24
-        - JOBS=28
-    ports:
-        - 3632:3632
-    user: distccd
+services:
+    distcc:
+        container_name: distcc-server
+        image: distcc-server:latest
+        environment: 
+            - NETWORK=192.168.178.0/24
+            - JOBS=14
+        ports:
+            - 3632:3632
+        user: distccd

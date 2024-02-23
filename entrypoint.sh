@@ -11,4 +11,4 @@ if [ -n "$JOBS" ]; then
     append_params="$append_params --jobs $JOBS"
 fi
 
-distccd --allow=$net --daemon --verbose --no-detach $append_params
+/usr/bin/distccd --allow=$net --daemon --log-level info --no-detach --log-stderr $append_params 
